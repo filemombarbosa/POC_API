@@ -1,0 +1,3 @@
+service namespace "hana_mta_xs_api.db" {
+  "hana_mta_xs_api.db::error" as "error";
+}

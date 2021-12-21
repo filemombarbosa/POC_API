@@ -1,0 +1,37 @@
+ID: hana_mta_xs_api
+_schema-version: "3.1"
+version: 0.0.1
+
+modules:
+   - name: hana_mta_xs_api-db
+     type: hdb
+     path: db
+     parameters:
+        memory: 128M
+        disk-quota: 256M
+        buildpack: https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v1.7.25/nodejs-buildpack-cflinuxfs3-v1.7.25.zip
+     requires:
+        - name: hana_mta_xs_api-hdi
+
+   - name: hana_mta_xs_api-srv
+     type: nodejs
+     path: srv
+     parameters:
+        disk-quota: 512M
+        memory: 256M
+        buildpack: https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v1.7.25/nodejs-buildpack-cflinuxfs3-v1.7.25.zip
+     provides:
+        - name: srv_api
+          properties:
+             url: ${default-url}
+     requires:
+        - name: hana_mta_xs_api-hdi
+
+resources:
+  - name: hana_mta_xs_api-hdi
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana  # or 'hanatrial' on trial landscapes
+      service-plan: hdi-shared
+    properties:
+      hdi-container-name: ${service-name}

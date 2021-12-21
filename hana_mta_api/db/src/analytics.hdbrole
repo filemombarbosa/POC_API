@@ -1,0 +1,12 @@
+{
+  "role": {
+    "name": "hana_mta_api.db::analytics",
+    "schema_privileges": [
+      {
+        "privileges": [
+          "SELECT"
+        ]
+      }
+    ]
+  }
+}

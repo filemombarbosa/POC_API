@@ -1,0 +1,27 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "hana_mta_api.db::error",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "hana_mta_api.db::error.csv",
+                "has_header": true,
+                "type_config": {
+                    "delimiter": ",",
+                    "do_quote": true
+                }
+            },
+            "import_settings": {
+                "import_columns": [
+                    "id",
+                    "errorNumber",
+                    "objectName",
+                    "processId",
+                    "createdon",
+                    "errorMessage"
+                ]
+            }
+        }
+    ]
+}
