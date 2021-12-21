@@ -37,7 +37,7 @@ paths:
       summary: Inserts an error log.
       description: Inserts a list of errors.
       responses:
-        '200':    # status code
+        '201':    # status code
           description: A JSON updated error log
           content:
             application/json:
@@ -147,14 +147,5 @@ paths:
             minimum: 1
       description: Deletes a error log.
       responses:
-        '200':    # status code
-          description: Status and number of affected rows
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  Status:
-                    type: string
-                  Affected rows:
-                    type: string
+        '204':    # status code
+          description: No texte, means success
