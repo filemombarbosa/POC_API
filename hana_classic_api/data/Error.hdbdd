@@ -1,0 +1,12 @@
+namespace development.fbteixe.SRV.data;
+
+@Schema: 'FBTEIXE'
+
+entity Error {
+	key id 			: String(32);
+	errorNumber 	: String(36);
+	objectName 		: String(50);
+	processId 		: Integer;
+	createdon 		: UTCTimestamp;
+	errorMessage 	: String(5000);
+};

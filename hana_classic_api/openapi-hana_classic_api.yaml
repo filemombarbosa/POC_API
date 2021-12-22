@@ -1,0 +1,151 @@
+openapi: 3.0.0
+info:
+  title: POC API - hana_classic_api
+  description: Test API for HANA XS Application Environment.
+  version: 1.0.0
+servers:
+  - url: http://<HANA_HOST_NAME>:80<HANA_INSTANCE_NUMBER>/<HANA_TREE_PATH>/srv/index.xsodata/error
+    description: Main Endpoint.
+
+paths:
+  /error:
+    get:
+      summary: Returns a list of error logs.
+      description: Returns a list of errors.
+      responses:
+        '200':    # status code
+          description: A JSON array of error log
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  errorNumber:
+                    type: string
+                  objectName:
+                    type: string
+                  processId:
+                    type: integer
+                  createdon:
+                    type: string
+                  errorMessage:
+                    type: string
+                    
+    post:
+      summary: Inserts an error log.
+      description: Inserts a list of errors.
+      responses:
+        '201':    # status code
+          description: A JSON updated error log
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  errorNumber:
+                    type: string
+                  objectName:
+                    type: string
+                  processId:
+                    type: integer
+                  createdon:
+                    type: string
+                  errorMessage:
+                    type: string
+                    
+    
+    
+  /error({id}):
+    get:
+      summary: Returns an error log.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the log to get.
+          schema:
+            type: string
+            minimum: 1
+      description: Returns an error log.
+      responses:
+        '200':    # status code
+          description: A JSON with an error log
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  errorNumber:
+                    type: string
+                  objectName:
+                    type: string
+                  processId:
+                    type: integer
+                  createdon:
+                    type: string
+                  errorMessage:
+                    type: string
+                    
+    put:
+      summary: Updates a error log.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the log to get.
+          schema:
+            type: string
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                errorNumber:
+                  type: string
+                objectName:
+                  type: string
+                processId:
+                  type: integer
+                createdon:
+                    type: string  
+                errorMessage:
+                  type: string  
+      description: Updates a error log.
+      responses:
+        '200':    # status code
+          description: Status and number of affected rows
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Status:
+                    type: string
+                  Affected rows:
+                    type: string                
+  
+    delete:
+      summary: Deletes a error log.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the log to be deleted.
+          schema:
+            type: string
+            minimum: 1
+      description: Deletes a error log.
+      responses:
+        '204':    # status code
+          description: No texte, means success

@@ -1,0 +1,9 @@
+import = [
+	{
+	    table = "development.fbteixe.SRV.data::Error";
+	    schema = "FBTEIXE";               
+	    file = "development.fbteixe.SRV.data:Error.csv";
+	    header = true;
+	    delimField = ",";
+	}
+];
