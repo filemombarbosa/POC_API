@@ -4,7 +4,7 @@ info:
   description: Test API for HANA XS Application Environment.
   version: 1.0.0
 servers:
-  - url: http://<HANA_HOST_NAME>:80<HANA_INSTANCE_NUMBER>/<HANA_TREE_PATH>/srv/index.xsodata/error
+  - url: http://<HANA_HOST_NAME>:80<HANA_INSTANCE_NUMBER>/<HANA_FOLDER_PATH>/index.xsodata/error
     description: Main Endpoint.
 
 paths:
