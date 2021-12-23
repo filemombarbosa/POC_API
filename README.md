@@ -19,6 +19,10 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 
 ## How to use
 
+### How to get the API definitions/endpoints and other relevant information
+**Swagger View**   
+Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.swagger.io/#" target="_blank"> Swagger Editor </a>
+
 ### How to implement/deploy the API
 
 ### hana_capm_api:
@@ -82,10 +86,6 @@ Create all files in HANA Studio (Be aware of the file extensions)
 
 **Deploy**  
 Activate the files
-
-### How to get the API definitions/endpoints and other relevant information
-**Swagger View**   
-Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.swagger.io/#" target="_blank"> Swagger Editor  </a>
 
 ## Author
 
