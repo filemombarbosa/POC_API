@@ -25,7 +25,7 @@ Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.s
 
 ### How to implement/deploy the API
 
-### hana_capm_api:
+### HANA CLOUD - CAPM - hana_capm_api:
 **Prerequisites**
 - SAP Account - BTP.
 - HANA Instance - Cloud Infrastructure or Onprem.
@@ -46,7 +46,7 @@ cds deploy --to hana
 cf push --random-route
 ```
 
-### hana_mta_api:
+### HANA XSA - MTA - hana_mta_api:
 **Prerequisites**
 - SAP Account - BTP.
 - HANA Instance - Cloud Infrastructure or Onprem.
@@ -61,7 +61,7 @@ Expand on the "mta_archives" folder
 Right click on the .mtar file
 Choose the "Deploy MTA Archive"
 
-### hana_mta_xs_api:
+### HANA XS - XSJS - hana_mta_xs_api:
 **Prerequisites**
 - SAP Account - BTP.
 - HANA Instance - Cloud Infrastructure or Onprem.
@@ -76,7 +76,7 @@ Expand on the "mta_archives" folder
 Right click on the .mtar file
 Choose the "Deploy MTA Archive"
 
-### hana_classic_api:
+### HANA XS - CLASSIC - hana_classic_api:
 **Prerequisites**
 - HANA Instance - Cloud Infrastructure or Onprem.
 - HANA Studio.
