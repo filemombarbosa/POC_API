@@ -1,10 +1,10 @@
 COLUMN TABLE "hana_mta_xs_api.db::error" 
-    (
-        "id"	        VARCHAR(32),
-		"errorNumber"   VARCHAR(36),
-    	"objectName"	VARCHAR(50),    	
-    	"processId"     INTEGER,
-    	"createdon" 	VARCHAR(50),
-    	"errorMessage"  VARCHAR(5000),
-        PRIMARY KEY ("id") 
-    )
+(
+    "id"	        VARCHAR(32),
+    "errorNumber"   VARCHAR(36),
+    "objectName"	VARCHAR(50),    	
+    "processId"     INTEGER,
+    "createdon" 	VARCHAR(20),
+    "errorMessage"  VARCHAR(5000),
+    PRIMARY KEY ("id") 
+)

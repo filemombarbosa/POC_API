@@ -1,8 +1,8 @@
 import = [
 	{
-	    table = "development.fbteixe.SRV.data::Error";
-	    schema = "FBTEIXE";               
-	    file = "development.fbteixe.SRV.data:Error.csv";
+	    table = "<YOUR_RELATIVE_PATH>.data::Error";
+	    schema = "<YOUR_SCHEMA_NAME>";               
+	    file = "<YOUR_RELATIVE_PATH>.data:Error.csv";
 	    header = true;
 	    delimField = ",";
 	}

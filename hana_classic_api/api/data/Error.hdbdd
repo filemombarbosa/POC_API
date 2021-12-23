@@ -1,6 +1,6 @@
-namespace development.fbteixe.SRV.data;
+namespace <YOUR_RELATIVE_PATH>.data;
 
-@Schema: 'FBTEIXE'
+@Schema: '<YOUR_SCHEMA_NAME>'
 
 entity Error {
 	key id 			: String(32);

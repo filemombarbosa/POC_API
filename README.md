@@ -83,6 +83,10 @@ Choose the "Deploy MTA Archive"
 
 **Build**  
 Create all files in HANA Studio (Be aware of the file extensions)
+Change/Adjust the "relative file path", "namespace" and "Schema" the below files according to your environment:  
+- index.xsodata 
+- Error.hdbdd
+- ErrorLoader.hdbti
 
 **Deploy**  
 Activate the files
