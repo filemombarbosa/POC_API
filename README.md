@@ -20,7 +20,7 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 ## How to use
 
 ### How to get the API definitions/endpoints and other relevant information
-**Swagger View**   
+**Swagger Editor View**   
 Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.swagger.io/#" target="_blank"> Swagger Editor </a>
 
 ### How to implement/deploy the API
