@@ -1,2 +1,2 @@
 # top 3
-GET http://localhost:4004/srv/Error?$top=3&$select=id,errorMessage&$orderby=errorMessage%20desc
+GET http://localhost:4004/catalog/Error

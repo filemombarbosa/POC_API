@@ -9,7 +9,7 @@ service CatalogService @(path : '/srv') {
 
 annotate CatalogService.Error with @UI : {
     LineItem : [
-        {Value : id,      Label : 'ID'},
-        {Value : errorMessage,  Label : 'Error Message'}
+        {Value: id, Label: 'ID'},
+        {Value: errorMessage, Label: 'Error Message'}
     ]
 };
