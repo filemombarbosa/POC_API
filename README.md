@@ -60,9 +60,9 @@ This repo has some examples of API build on HANA Infrastructure, in the followin
 **Deploy**
 1. Activate the files
 
-### How to the the API definitions/Endpoints and relevant information
-**Swagger View**
-Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.swagger.io/#"> Swagger Editor  </a>
+### How to get the API definitions/endpoints and other relevant information
+**Swagger View**   
+Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.swagger.io/#" target="_blank"> Swagger Editor  </a>
 
 ## Author
 
