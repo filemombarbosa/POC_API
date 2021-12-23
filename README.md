@@ -15,6 +15,8 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - **HANA XS - CLASSIC** - hana_classic_api
 - **HANA CLOUD - CAPM** - hana_capm_api
 
+- **NOTE** All tests were done using the Trial SAP BTP Account.
+
 ## How to use
 
 ### How to implement/deploy the API
