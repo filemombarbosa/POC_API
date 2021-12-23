@@ -10,16 +10,37 @@
 ## Overview
 This repo provides some examples of basic API implementation on HANA Infrastructure, for the following scenarios:
 
+- **HANA CLOUD - CAPM** - hana_capm_api
 - **HANA XSA - MTA** - hana_mta_api
 - **HANA XS - XSJS** - hana_mta_xs_api
 - **HANA XS - CLASSIC** - hana_classic_api
-- **HANA CLOUD - CAPM** - hana_capm_api
 
 **NOTE** All tests were done using the Trial SAP BTP Account.
 
 ## How to use
 
 ### How to implement/deploy the API
+
+### hana_capm_api:
+**Prerequisites**
+- SAP Account - BTP.
+- HANA Instance - Cloud Infrastructure or Onprem.
+- Business Application Studio - Cloud Infrastructure or Onprem.
+
+**Build**  
+Run the following command in your console at the root folder:
+```bash
+cds build 	
+```
+**Deploy**  
+Run the following commands in your console at the root folder:
+```bash
+cds deploy --to hana
+```
+
+```bash
+cf push --random-route
+```
 
 ### hana_mta_api:
 **Prerequisites**
@@ -61,27 +82,6 @@ Create all files in HANA Studio (Be aware of the file extensions)
 
 **Deploy**  
 Activate the files
-
-### hana_capm_api:
-**Prerequisites**
-- SAP Account - BTP.
-- HANA Instance - Cloud Infrastructure or Onprem.
-- Business Application Studio - Cloud Infrastructure or Onprem.
-
-**Build**  
-Run the following command in your console at the root folder:
-```bash
-cds build 	
-```
-**Deploy**  
-Run the following commands in your console at the root folder:
-```bash
-cds deploy --to hana
-```
-
-```bash
-cf push --random-route
-```
 
 ### How to get the API definitions/endpoints and other relevant information
 **Swagger View**   
