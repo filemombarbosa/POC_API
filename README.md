@@ -15,7 +15,7 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - **HANA XS - XSJS** - hana_mta_xs_api
 - **HANA XS - CLASSIC** - hana_classic_api
 
-**NOTE** All tests were done using the Trial SAP BTP Account.
+**NOTE:** The vast majority of the tests were done using the Trial SAP BTP Account.
 
 ## How to use
 
