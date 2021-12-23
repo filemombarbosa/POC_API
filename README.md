@@ -1,10 +1,10 @@
 <p align="center">
   <a href="#">
-    <img src="https://cdn-icons-png.flaticon.com/512/627/627558.png" width="234" height="163" alt="" />
+    <img src="https://cdn-icons-png.flaticon.com/512/627/627558.png" width="160" height="160" alt="" />
   </a>
 </p>
 
-<p align="center">HANA Basics API 🚀</p>
+<p align="center">HANA APIs 🚀</p>
 
 
 ## Overview
