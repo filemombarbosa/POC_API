@@ -3,8 +3,8 @@ const xsenv = require('@sap/xsenv');
 
 var options = {
 	anonymous: true,
-	//xsApplicationUser: true,
-	//auditLog: { logToConsole: true },
+	xsApplicationUser: false,
+	auditLog: { logToConsole: false },
 	redirectUrl: '/srv/index.xsjs'
 };
 

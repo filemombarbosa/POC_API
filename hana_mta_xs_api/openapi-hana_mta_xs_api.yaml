@@ -148,4 +148,4 @@ paths:
       description: Deletes a error log.
       responses:
         '204':    # status code
-          description: No texte, means success
+          description: No text, means success

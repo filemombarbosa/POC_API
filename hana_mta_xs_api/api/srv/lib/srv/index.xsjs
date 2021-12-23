@@ -1,5 +1,5 @@
 var conn = $.hdb.getConnection();
-var query = 'SELECT * FROM "hana_mta_api.db::error" WHERE "id" > 1 ORDER BY "id" DESC';
+var query = 'SELECT * FROM "hana_mta_xs_api.db::error"';
 var results = conn.executeQuery(query);
 conn.close();
 
