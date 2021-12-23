@@ -15,7 +15,7 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - **HANA XS - CLASSIC** - hana_classic_api
 - **HANA CLOUD - CAPM** - hana_capm_api
 
-- **NOTE** All tests were done using the Trial SAP BTP Account.
+**NOTE** All tests were done using the Trial SAP BTP Account.
 
 ## How to use
 
@@ -28,13 +28,13 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
 **Build**
-1. Right click on the MTA file
-2. Choose the "Build MTA Project"
+Right click on the MTA file
+Choose the "Build MTA Project"
 
 **Deploy**
-1. Expand on the "mta_archives" folder 
-2. Right click on the .mtar file
-3. Choose the "Deploy MTA Archive"
+Expand on the "mta_archives" folder 
+Right click on the .mtar file
+Choose the "Deploy MTA Archive"
 
 ### hana_mta_xs_api:
 **Prerequisites**
@@ -43,13 +43,13 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
 **Build**
-1. Right click on the MTA file
-2. Choose the "Build MTA Project"
+Right click on the MTA file
+Choose the "Build MTA Project"
 
 **Deploy**
-1. Expand on the "mta_archives" folder 
-2. Right click on the .mtar file
-3. Choose the "Deploy MTA Archive"
+Expand on the "mta_archives" folder 
+Right click on the .mtar file
+Choose the "Deploy MTA Archive"
 
 ### hana_classic_api:
 **Prerequisites**
@@ -57,10 +57,10 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - HANA Studio.
 
 **Build**
-1. Create all files in HANA Studio (Be aware of the file extensions)
+Create all files in HANA Studio (Be aware of the file extensions)
 
 **Deploy**
-1. Activate the files
+Activate the files
 
 ### hana_capm_api:
 **Prerequisites**
@@ -69,12 +69,12 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
 **Build**
-1. Run the following command in your console at the root folder:
+Run the following command in your console at the root folder:
 ```bash
 cds build 	
 ```
 **Deploy**
-1. 1. Run the following commands in your console at the root folder:
+Run the following commands in your console at the root folder:
 ```bash
 cds deploy --to hana
 ```
