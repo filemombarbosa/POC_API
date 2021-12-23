@@ -4,7 +4,7 @@ info:
   description: Test API for HANA Multi Target Application Environment.
   version: 1.0.0
 servers:
-  - url: https://b22fc7a6trial-dev-hana-mta-api-srv.cfapps.eu10.hana.ondemand.com/
+  - url: https://<BTP_ACCOUNT_ID>-<BTP_SPACE>-<MTA_SERVICE_NAME>.cfapps.eu10.hana.ondemand.com/
     description: Main Endpoint.
 
 paths:
@@ -142,3 +142,11 @@ paths:
                     type: string
                   Affected rows:
                     type: string
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []

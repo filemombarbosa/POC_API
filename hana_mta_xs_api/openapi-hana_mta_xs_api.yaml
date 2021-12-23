@@ -4,7 +4,7 @@ info:
   description: Test API for HANA XS Application Environment.
   version: 1.0.0
 servers:
-  - url: https://b22fc7a6trial-dev-hana-mta-xs-api-srv.cfapps.eu10.hana.ondemand.com/srv/index.xsodata
+  - url: https://<BTP_ACCOUNT_ID>-<BTP_SPACE>-<MTA_SERVICE_NAME>.cfapps.eu10.hana.ondemand.com/<HANA_FOLDER_PATH>/index.xsodata
     description: Main Endpoint.
 
 paths:
@@ -147,3 +147,11 @@ paths:
       responses:
         '204':    # status code
           description: No text, means success
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []

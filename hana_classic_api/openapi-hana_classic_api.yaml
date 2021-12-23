@@ -147,3 +147,11 @@ paths:
       responses:
         '204':    # status code
           description: No text, means success
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []          
