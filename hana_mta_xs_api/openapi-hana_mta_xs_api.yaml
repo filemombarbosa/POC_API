@@ -56,8 +56,6 @@ paths:
                     type: string
                   errorMessage:
                     type: string
-                    
-    
     
   /error({id}):
     get:
