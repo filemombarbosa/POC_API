@@ -32,19 +32,13 @@ Past the content of the "openapi-XXX.yaml" file in the <a href="https://editor.s
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
 **Build**  
-Run the following command in your console at the root folder:
-```bash
-cds build 	
-```
-**Deploy**  
-Run the following commands in your console at the root folder:
-```bash
-cds deploy --to hana
-```
+Right click on the MTA file
+Choose the "Build MTA Project"
 
-```bash
-cf push --random-route
-```
+**Deploy**  
+Expand on the "mta_archives" folder 
+Right click on the .mtar file
+Choose the "Deploy MTA Archive"
 
 ### HANA XSA - MTA - hana_mta_api:
 **Prerequisites**

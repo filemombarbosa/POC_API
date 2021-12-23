@@ -4,9 +4,9 @@ info:
   description: Test API for HANA & SAP CAPM Application Environment.
   version: 1.0.0
 servers:
-  - url: https://<BTP_ACCOUNT_ID>-<BTP_SPACE>-<MTA_SERVICE_NAME>.cfapps.eu10.hana.ondemand.com/<HANA_FOLDER_PATH>/catalog/Error
+  - url: https://<BTP_ACCOUNT_ID>-<BTP_SPACE>-<MTA_SERVICE_NAME>.cfapps.eu10.hana.ondemand.com/<HANA_FOLDER_PATH>/srv/Error
     description: Main Endpoint.
-  - url: https://<BTP_ACCOUNT_ID>-<BTP_SPACE>-<MTA_SERVICE_NAME>.cfapps.eu10.hana.ondemand.com/<HANA_FOLDER_PATH>/v2/catalog/Error
+  - url: https://<BTP_ACCOUNT_ID>-<BTP_SPACE>-<MTA_SERVICE_NAME>.cfapps.eu10.hana.ondemand.com/<HANA_FOLDER_PATH>/v2/srv/Error
     description: Odata V2.
     
 paths:
@@ -59,7 +59,7 @@ paths:
                   errorMessage:
                     type: string
     
-  /error({id}):
+  /error('{id}'):
     get:
       summary: Returns an error log.
       parameters:
