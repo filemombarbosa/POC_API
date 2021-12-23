@@ -27,11 +27,11 @@ This repo provides some examples of basic API implementation on HANA Infrastruct
 - HANA Instance - Cloud Infrastructure or Onprem.
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
-**Build**
+**Build**  
 Right click on the MTA file
 Choose the "Build MTA Project"
 
-**Deploy**
+**Deploy**  
 Expand on the "mta_archives" folder 
 Right click on the .mtar file
 Choose the "Deploy MTA Archive"
@@ -42,11 +42,11 @@ Choose the "Deploy MTA Archive"
 - HANA Instance - Cloud Infrastructure or Onprem.
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
-**Build**
+**Build**  
 Right click on the MTA file
 Choose the "Build MTA Project"
 
-**Deploy**
+**Deploy**  
 Expand on the "mta_archives" folder 
 Right click on the .mtar file
 Choose the "Deploy MTA Archive"
@@ -56,10 +56,10 @@ Choose the "Deploy MTA Archive"
 - HANA Instance - Cloud Infrastructure or Onprem.
 - HANA Studio.
 
-**Build**
+**Build**  
 Create all files in HANA Studio (Be aware of the file extensions)
 
-**Deploy**
+**Deploy**  
 Activate the files
 
 ### hana_capm_api:
@@ -68,12 +68,12 @@ Activate the files
 - HANA Instance - Cloud Infrastructure or Onprem.
 - Business Application Studio - Cloud Infrastructure or Onprem.
 
-**Build**
+**Build**  
 Run the following command in your console at the root folder:
 ```bash
 cds build 	
 ```
-**Deploy**
+**Deploy**  
 Run the following commands in your console at the root folder:
 ```bash
 cds deploy --to hana
